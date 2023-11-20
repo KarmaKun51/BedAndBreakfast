@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gestisciPrenotazioni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+    .container-fluid{
+        background-color: #88B06A;
+    }
+    .navbar.navbar-expand-lg.bg-body-tertiary{
+        padding-top: 0px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">B&B_PinnacoliPendenti</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PaginaPrenotazioneB&B.html">Prenotazioni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Contatti</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indedRecensioni.html">Recensioni</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br><br>
+    <div>
+        <main> 
+            <div class="container mt-4"> 
+                <div id="containerFormDati">
+                    <form>
+                    <div>
+                        <label for="menu">Verifica disponibilità per la camera selezionata</label>
+                            <select id="camere" required>
+                                <option value="SpiaggieSnob">Spiaggie Snob</option>
+                                <option value="ApprodoAvventurato">Approdo Avventurato</option>
+                                <option value="Parcopacifico">Parco pacifico</option>
+                                <option value="Palmetoparadisiaco">Palmeto paradisiaco</option>
+                                <option value="Boscoblaterante">Bosco blaterante</option>
+                                <option value="Sprofondostantio">Sprofondo stantio</option>
+                            </select>
+                            <button class="btn btn-primary" type="button" onclick="seleziona()">Seleziona</button>
+                    </div>
+                </form>
+            <div id="divLaTuaPrenotazione">
+                <h5 style="text-align: center;"><strong>Date occupate per questa camera:</strong></h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Cognome</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabella"></tbody>
+                </table>
+            </div>
+        
+            </div>
+        
+            <script>
+                function aggiungiDati() {
+        
+                    //recuperiamo i dati inseriti dall'utente
+                    var nome = document.getElementById("nome").value;
+                    var cognome = document.getElementById("cognome").value;
+                    var checkIn = document.getElementById("checkIn").value;
+                    var checkOut = document.getElementById("checkOut").value;
+        
+                    //ottengo il valore della select
+                    var indiceSelezionato = camere.selectedIndex;
+                    var valoreSelezionato = camere.options[indiceSelezionato];
+                    var valoreDentroLopzione = valoreSelezionato.value; //questa è la nostra variabile con il valore selezionato
+        
+                    //creiamo una nuova riga nella tabella
+                    var riga = document.createElement("tr");
+        
+                    //creiamo le colonne
+                    var colonnaNome = document.createElement("td");
+                    var colonnaCognome = document.createElement("td");
+                    var colonnaCheckIn= document.createElement("td");
+                    var colonnaCheckOut= document.createElement("td");
+                    var colonnaLaTuaCamera= document.createElement("td");
+        
+                    //assegnamoo i valori di input alla riga della tabella
+                    colonnaNome.innerText = nome;
+                    colonnaCognome.innerText = cognome;
+                    colonnaCheckIn.innerText = checkIn;
+                    colonnaCheckOut.innerText = checkOut;
+                    colonnaLaTuaCamera.innerHTML = valoreDentroLopzione;
+        
+                    //aggiungiamo le celle alla riga
+                    riga.appendChild(colonnaNome);
+                    riga.appendChild(colonnaCognome);
+                    riga.appendChild(colonnaCheckIn);
+                    riga.appendChild(colonnaCheckOut);
+                    riga.appendChild(colonnaLaTuaCamera);
+        
+                    //aggiungiamo la riga alla tabella
+                    var tabella = document.getElementById("tabella");
+                    tabella.appendChild(riga);
+                }
+            </script>
+        </main>
+        
+</body>
+</html>

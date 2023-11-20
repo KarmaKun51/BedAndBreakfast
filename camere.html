@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Camere</title>
+</head>
+<style>
+  body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.divContenitore{
+    height: 100%;
+    width: 100%;
+}
+.container-fluid{
+    background-color: #88B06A;
+}
+#divTitolo {
+    background-color: #88B06A;
+    text-align: left;
+    left: 200px;
+    width: 320px; 
+    border-radius: 10px;
+    box-shadow: 3px 7px;
+    margin: auto;
+    margin-top: 50px;
+}
+.logo{
+    width: 15%;
+    height: auto;
+}
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    padding-top: 0px;
+}
+article{
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divFlex{
+    display: flex;
+    align-items: center;
+}
+#divElemento{
+    margin:60px;
+}
+</style>
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">B&B_PinnacoliPendenti</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PaginaPrenotazioneB&B.html">Prenotazioni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Contatti</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indedRecensioni.html">Recensioni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br><br>
+      <!--Fine Navbar-->
+      <header>
+        <div id="divTitolo">
+          <img src="immagini/logo.png" alt="logoB&B" class="logo"> <span id="testo">B&B Pinnacoli Pendenti</span>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+      <article>
+          <h1>Le nostre camere</h1><br><br>
+          <div id="divFlex">
+              <div id="divElemento">
+          <div class="card" style="width: 18rem;">
+              <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="immagini/spiaggieSnob1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="immagini/spiaggieSnob2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="immagini/spiaggieSnob3.jpg "class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              <div class="card-body">
+                <h5 class="card-title">Spiaggie Snob</h5>
+                <p class="card-text">Spiaggia? in montagna? nel nostro albergo è possibile, goditi un fantastico soggiorno in riva al lago, nella nostra lussuosissima doppia matrimoniale<br><br>350€</p>
+                <a href="PaginaPrenotazioneB&B.html" class="btn btn-primary">Prenota</a>
+              </div>
+            </div>
+          </div>
+            
+          <div id="divElemento">
+              <div class="card" style="width: 18rem;">
+                <div id="carouselExample3" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="immagini/approdoAvventurato1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/approdoAvventurato2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/approdoAvventurato3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Approdo Avventurato</h5>
+                  <p class="card-text">Goditi un soggiorno nella nosta magica pagoda giapponese, tradizionale e moderna allo stesso tempo.<br><br>300€</p>
+                  <a href="PaginaPrenotazioneB&B.html" class="btn btn-primary">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div id="divElemento">
+              <div class="card" style="width: 18rem;">
+                  <div id="carouselExample4" class="carousel slide">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="immagini/parcoPacifico1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="immagini/parcoPacifico3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="immagini/ParcoPacifico2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Parco pacifico</h5>
+                    <p class="card-text">Camera tranquilla e rilassante, 2 camere da letto matrimoniali e piccolo parchetto Zen esterno.<br><br>250€</p>
+                    <a href="PaginaPrenotazioneB&B.html" class="btn btn-primary">Prenota</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+          <div id="divFlex">
+              <div id="divElemento">
+              <div class="card" style="width: 18rem;">
+                <div id="carouselExample2" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="immagini/palmetoParadisiaco1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/palmetoParadisiaco2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="immagini/palmetoParadisiaco3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Palmeto paradisiaco</h5>
+                  <p class="card-text">Camera matrimoniale stile vecchio west, ma con qualche tocco moderno, per un soggiorno paradisiaco<br><br>200€</p>
+                  <a href="PaginaPrenotazioneB&B.html" class="btn btn-primary">Prenota</a>
+                </div>
+              </div>
+            </div>
+             
+                    <div id="divElemento">
+                    <div class="card" style="width: 18rem;">
+                      <div id="carouselExample5" class="carousel slide">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="immagini/boscoBlaterante1.jpg"class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="immagini/boscoBlaterante2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="immagini/boscoBlaterante3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Bosco blaterante</h5>
+                        <p class="card-text">Camera matrimoniale immersa nella natura, ma con tutti i confort di un albergo<br><br>150€</p>
+                        <a href="PaginaPrenotazioneB&B.html" class="btn btn-primary">Prenota</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="divElemento">
+                      <div class="card" style="width: 18rem;">
+                        <div id="carouselExample6" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="immagini/sprofondoStantio1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="immagini/sprofondoStantio2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="immagini/sprofondoStantio3.avif" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Sprofondo stantio</h5>
+                          <p class="card-text">Camera matrimoniale doppia, in un fantastico paesaggio in mezzo al lago, da non perdere!<br><br>100€</p>
+                          <a href="PaginaPrenotazioneB&B.html" class="btn btn-primary">Prenota</a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div>I prezzi indicati sotto le camere indicano la quota per una sola notte.</div>
+                  </div>
+                </main>
+    </article>
+</div>
+</body>
+</html>
